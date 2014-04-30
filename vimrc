@@ -16,7 +16,7 @@ set go=             " 不要图形按钮
 
 """"''color asmanian2     " 设置背景主题  
 
-colorscheme molokai       " 颜色主题
+""colorscheme solarized      " 颜色主题
 
 set guifont=Courier_New:h10:cANSI   " 设置字体  
 
