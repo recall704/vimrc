@@ -4,17 +4,19 @@
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-"set shortmess=atI   " 启动的时候不显示那个援助乌干达儿童的提示  
+set shortmess=atI   " 启动的时候不显示那个援助乌干达儿童的提示  
 
 "winpos 5 5          " 设定窗口位置  
 
 "set lines=40 columns=155    " 设定窗口大小  
 
-"set nu              " 显示行号  
+set nu              " 显示行号  
 
 set go=             " 不要图形按钮  
 
 """"''color asmanian2     " 设置背景主题  
+
+colorscheme molokai       " 颜色主题
 
 set guifont=Courier_New:h10:cANSI   " 设置字体  
 
@@ -38,7 +40,7 @@ set novisualbell    " 不要闪烁(不明白)
 
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}   "状态行显示的内容  
 
-set laststatus=1    " 启动显示状态行(1),总是显示状态行(2)  
+set laststatus=2    " 启动显示状态行(1),总是显示状态行(2)  
 
 set foldenable      " 允许折叠  
 
@@ -58,9 +60,7 @@ if version >= 603
 
 endif
 
-" 设置配色方案
 
-"colorscheme murphy
 
 "字体 
 
@@ -163,12 +163,6 @@ endfunc
 "键盘命令
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
-
-nmap <leader>w :w!<cr>
-
-nmap <leader>f :find<cr>
 
 
 
@@ -515,36 +509,6 @@ filetype plugin indent on
 "打开文件类型检测, 加了这句才可以用智能补全
 
 set completeopt=longest,menu
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" CTags的设定  
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-let Tlist_Sort_Type = "name"    " 按照名称排序  
-
-let Tlist_Use_Right_Window = 1  " 在右侧显示窗口  
-
-let Tlist_Compart_Format = 1    " 压缩方式  
-
-let Tlist_Exist_OnlyWindow = 1  " 如果只有一个buffer，kill窗口也kill掉buffer  
-
-let Tlist_File_Fold_Auto_Close = 0  " 不要关闭其他文件的tags  
-
-let Tlist_Enable_Fold_Column = 0    " 不要显示折叠树  
-
-autocmd FileType java set tags+=D:\tools\java\tags  
-
-"autocmd FileType h,cpp,cc,c set tags+=D:\tools\cpp\tags  
-
-"let Tlist_Show_One_File=1            "不同时显示多个文件的tag，只显示当前文件的
-
-"设置tags  
-
-set tags=tags  
-
-"set autochdir 
 
 
 
