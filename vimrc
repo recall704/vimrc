@@ -478,7 +478,7 @@ au BufRead,BufNewFile *  setfiletype txt
 
 :inoremap ) <c-r>=ClosePair(')')<CR>
 
-:inoremap { {<CR>}<ESC>O
+:inoremap { {}<ESC>i
 
 :inoremap } <c-r>=ClosePair('}')<CR>
 
@@ -522,3 +522,6 @@ noremap   ;; :w!<CR>       "  正常模式下两个分号保存文件
 inoremap  ,, <ESC>         "  输入模式下两个逗号 代替ESC
 vnoremap  ,, <ESC>         "  视图模式下两个逗号 代替ESC
 noremap   ,, <ESC>         "  正常模式下两个逗号 代替ESC
+inoremap  jk <ESC>         "  输入模式下两个逗号 代替ESC
+vnoremap  jk <ESC>         "  视图模式下两个逗号 代替ESC
+noremap   jk <ESC>         "  正常模式下两个逗号 代替ESC
